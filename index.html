@@ -1,127 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lokesh Portfolio - Web Developer, passionate about coding and projects in web development. Explore projects, certifications, and achievements here.">
-  <meta property="og:title" content="Lokesh Yechina's Portfolio">
-  <meta property="og:description" content="Web Developer Portfolio - Projects, Certifications, and Achievements">
-  <meta property="og:image" content="photo.jpg">
-  <meta property="og:url" content="https://your-portfolio-url.com">
-  <title>Yechina Lokesh's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="header-left">
-      <h1 class="logo">Yechina Lokesh</h1>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="form-group">
+            <label for="temp-input">Enter Temperature:</label>
+            <input type="text" id="temp-input" placeholder="Enter temperature">
+        </div>
+        <div class="form-group">
+            <label for="unit-selector">Select Unit:</label>
+            <select id="unit-selector">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+        </div>
+        <button id="convert-btn">Convert</button>
+        <div id="result" class="result"></div>
     </div>
-    <nav class="header-right">
-      <ul class="nav-links">
-        <li><a href="about.html" class="nav-link" aria-label="About page">About</a></li>
-        <li><a href="projects.html" class="nav-link" aria-label="Projects page">Projects</a></li>
-        <li><a href="#contact" class="nav-link" aria-label="Contact section">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="hero">
-    <img src="photo.jpg" alt="Photo of Yechina Lokesh, Web Developer" class="profile-photo">
-    <h1>Welcome to Yechina Lokesh's Portfolio</h1>
-    <p>I am a passionate web developer.</p>
-    <a href="MY_RESUME.pdf" class="cta" aria-label="Get My Resume">Get My Resume</a>
-  </section>
-
-  <section id="achievements">
-    <h2>Achievements</h2>
-    <ul>
-      <li>Completed a comprehensive web development bootcamp.</li>
-      <li>Successfully implemented web development projects.</li>
-      <li>Contributed to open-source projects on GitHub.</li>
-    </ul>
-  </section>
-
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <div class="certification-provider">
-        <h3>Cisco</h3>
-        <ul>
-            <li>Programming Essentials in Python</li>
-            <li>Introduction to Data Science</li>
-        </ul>
-    </div>
-    <div class="certification-provider">
-        <h3>Great Learning</h3>
-        <ul>
-            <li>SQL for Data Science</li>
-            <li>Big Data Programming</li>
-        </ul>
-    </div>
-    <div class="certification-provider">
-        <h3>Lets Upgrade</h3>
-        <ul>
-            <li>HTML</li>
-            <li>JavaScript</li>
-            <li>Python Bootcamp</li>
-        </ul>
-    </div>
-</section>
-
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill">
-        <img src="html-logo.png" alt="HTML logo" class="skill-logo">
-        <p>HTML</p>
-      </div>
-      <div class="skill">
-        <img src="css-logo.png" alt="CSS logo" class="skill-logo">
-        <p>CSS</p>
-      </div>
-      
-      <div class="skill">
-        <img src="js.png" alt="JavaScript logo" class="skill-logo">
-        <p>JavaScript</p>
-      </div>
-      <div class="skill">
-        <img src="react.png" alt="React logo" class="skill-logo">
-        <p>React</p>
-      </div>
-      <div class="skill">
-        <img src="python.jpeg" alt="Python logo" class="skill-logo">
-        <p>Python</p>
-      </div>
-      <div class="skill">
-        <img src="sql.jpeg" alt="SQL logo" class="skill-logo">
-        <p>SQL</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form action="mailto:lokeshyechina@gmail.com" method="post" enctype="text/plain">
-      <label for="email">Your Email</label>
-      <input type="email" id="email" placeholder="Your Email" required aria-label="Enter your email">
-      <label for="message">Your Message</label>
-      <textarea id="message" placeholder="Your Message" required aria-label="Enter your message"></textarea>
-      <button type="submit" aria-label="Send message">Send</button>
-    </form>
-    <p>You can also reach me at: <strong>lokeshyechina@gmail.com</strong></p>
-  </section>
-
-  <footer>
-    <div class="social-links">
-      <a href="https://github.com/YechinaLokesh" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a> |
-      <a href="https://www.linkedin.com/in/lokesh-yechina" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a>
-    </div>
-    <p>© 2024 Yechina Lokesh. All rights reserved.</p>
-  </footer>
-
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

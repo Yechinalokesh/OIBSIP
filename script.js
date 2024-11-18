@@ -1,39 +1,35 @@
-window.addEventListener("scroll", () => {
-    const header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
-  });
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const text = "Welcome to Yechina Lokesh's Portfolio";
-    const heroText = document.getElementById("hero-text");
-    let index = 0;
+document.getElementById('convert-btn').addEventListener('click', function () {
+    // Fetch input values
+    const tempInput = document.getElementById('temp-input').value;
+    const unitSelector = document.getElementById('unit-selector').value;
+    const resultDiv = document.getElementById('result');
 
-    function type() {
-      if (index < text.length) {
-        heroText.textContent += text.charAt(index);
-        index++;
-        setTimeout(type, 100); // Adjust typing speed as needed
-      }
+    // Check if the input is valid
+    if (isNaN(tempInput) || tempInput.trim() === "") {
+        resultDiv.textContent = "Please enter a valid number for temperature.";
+        return;
     }
 
-    type();
-  });
-</script>
+    const temperature = parseFloat(tempInput);
+    let convertedTemp = '';
+    let resultText = '';
 
-  
-  document.addEventListener('DOMContentLoaded', function () {
-    const typedText = document.querySelector('.typed-text');
-    const text = typedText.textContent;
-    typedText.textContent = '';
-    let index = 0;
-
-    function typeEffect() {
-        if (index < text.length) {
-            typedText.textContent += text[index];
-            index++;
-            setTimeout(typeEffect, 100); // Adjust typing speed here
-        }
+    // Perform conversions based on the selected unit
+    switch (unitSelector) {
+        case 'Celsius':
+            convertedTemp = `Fahrenheit: ${(temperature * 9/5 + 32).toFixed(2)} °F, Kelvin: ${(temperature + 273.15).toFixed(2)} K`;
+            break;
+        case 'Fahrenheit':
+            convertedTemp = `Celsius: ${((temperature - 32) * 5/9).toFixed(2)} °C, Kelvin: ${(((temperature - 32) * 5/9) + 273.15).toFixed(2)} K`;
+            break;
+        case 'Kelvin':
+            convertedTemp = `Celsius: ${(temperature - 273.15).toFixed(2)} °C, Fahrenheit: ${((temperature - 273.15) * 9/5 + 32).toFixed(2)} °F`;
+            break;
+        default:
+            resultText = "Please select a valid unit.";
+            break;
     }
 
-    typeEffect();
+    // Display the result
+    resultDiv.textContent = convertedTemp;
 });
