@@ -1,0 +1,153 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Features Section */
+.features {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.feature {
+    margin: 30px 0;
+}
+
+.feature h3 {
+    font-size: 1.8em;
+    color: #ff5722;
+}
+
+.feature p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Demo Video Section */
+.demo-video {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+}
+
+.demo-video h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* Countdown Section */
+.countdown {
+    background-color: #ff5722;
+    color: white;
+    padding: 50px 0;
+}
+
+#countdown-timer {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+/* Sign Up Section */
+.signup {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.signup h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.signup p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.signup input {
+    padding: 12px;
+    font-size: 1.1em;
+    width: 50%;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.signup button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup button:hover {
+    background-color: #e64a19;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
