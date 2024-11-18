@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects - Lokesh Yechina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Inline CSS -->
+  <style>
+    /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-container h1 {
+      color: #ffffff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #bb86fc;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    #projects h2 {
+      text-align: center;
+      color: #bb86fc;
+      margin-bottom: 20px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s;
+    }
+
+    .project-card h3 {
+      color: #bb86fc;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #ffffff;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <h1 class="logo">Lokesh Yechina</h1>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>1. Snake Game in Python</h3>
+          <p>A classic Snake game developed using Python's Pygame library. Players control a snake to collect food while avoiding collisions with the walls and itself.</p>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>2. Personal Portfolio Website</h3>
+          <p>A responsive portfolio website created using HTML, CSS, and JavaScript. Showcases skills, projects, and contact information for potential clients and employers.</p>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>3. To-Do List Application</h3>
+          <p>A simple web-based to-do list application built with React. Users can add, remove, and mark tasks as completed, helping them manage their daily activities.</p>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-card">
+          <h3>4. Weather App</h3>
+          <p>A web application that fetches and displays weather information for any city using a weather API. Built with HTML, CSS, and JavaScript, featuring a clean and user-friendly interface.</p>
+        </div>
+        <!-- Project 5 -->
+        <div class="project-card">
+          <h3>5. Blood Bank Management System</h3>
+          <p>A comprehensive blood bank management system designed to keep track of blood donations, available blood types, and manage donor and patient information. Developed using technologies like HTML, CSS, JavaScript, and PHP for backend management.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 Lokesh Yechina. All rights reserved.</p>
+  </footer>
+</body>
+</html>
