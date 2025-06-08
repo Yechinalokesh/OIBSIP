@@ -34,4 +34,3 @@ document.getElementById('convert-btn').addEventListener('click', function () {
     // Display the result
     resultDiv.textContent = convertedTemp;
 });
-
