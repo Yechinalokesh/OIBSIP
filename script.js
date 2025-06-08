@@ -1,3 +1,4 @@
+
 document.getElementById('convert-btn').addEventListener('click', function () {
     // Fetch input values
     const tempInput = document.getElementById('temp-input').value;
